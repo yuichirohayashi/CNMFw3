@@ -1,8 +1,8 @@
 %% Run CNMFw3
 % Written by Yuichiro Hayashi 2021
-% 処理対象のファイルは、Y: X x Y x Z x T のデータを.matに格納しておく
-load('d2regdata3D11');
-%load('simrealbg05');
+% INPUT
+% Y: 3d movie (XYZT)
+
 Y = double(Y);
 [d1,d2,d3,T] = size(Y);                            % dimensions of dataset
 d = d1*d2*d3;                                      % total number of pixels
