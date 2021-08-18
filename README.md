@@ -13,3 +13,7 @@ CNMFw3 has the following dependencies:
 - MATLAB (2018a or later)
 - CNMF (https://github.com/flatironinstitute/CaImAn-MATLAB)
 - ordfilt3 (https://www.mathworks.com/matlabcentral/fileexchange/22044-ordfilt3) 
+
+## License
+
+This project is covered under the MIT license.
