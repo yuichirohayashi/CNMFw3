@@ -2,8 +2,8 @@ function [filters, traces] = demoCNMFw3()
 
 % run CNMFw3 with simulated data
 % OUTPUT
-% filters: spatial footprints
-% traces: temporal traces
+% filters: spatial footprints (n x X x Y x Z)
+% traces: temporal traces (n x T)
 
 % simdata params
 load('bg');
@@ -19,9 +19,11 @@ d3=10;
 T = 1000;
 
 [Y, fspk] = gensim3dmovRealBG(bg, snr, scalef);
+tic
 [A,C] = runCNMFw3mat(Y, nPCs);
 traces = C;
 filters = permute(reshape(full(A),d1,d2,d3,size(A,2)),[4 1 2 3]);
+toc
 
 
 
