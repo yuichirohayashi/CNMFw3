@@ -25,7 +25,10 @@ traces = C;
 filters = permute(reshape(full(A),d1,d2,d3,size(A,2)),[4 1 2 3]);
 toc
 
-
+figure
+plotsig(traces,1,'none','none',1),title('Traces')
+figure
+ploticafilters3d(filters,0.8,'smooth'),title('Spatial footprints')
 
 
 

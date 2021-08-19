@@ -4,7 +4,7 @@ CNMFw3 (CNMF for wide-field 3D image) is a Constrained NMF-based neural activity
 
 ## Usage
 
-Load movie data as 4d array named Y (XYZT) and run runCNMFw3.m
+Load movie data as 4d array named Y (XYZT) and run `runCNMFw3.m`
 
 
 ## Dependencies
@@ -24,7 +24,7 @@ CNMFw3 has the following dependencies:
 
 demoCNMFw3: this demo runs CNMFw3 with simulated data (100 x 100 x 10 voxels, 1000 frames).
 
->>[filters,traces]=demoCNMFw3;
+`[filters,traces]=demoCNMFw3;`
 
 This demo took <100 seconds on a desktop PC with Intel Core i7-4790 and 32GB RAM.
 
